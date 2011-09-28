@@ -1,0 +1,10 @@
+Requires:
+   ruby 1.9x
+
+How to:
+- Create a filter in JIRA and record the filter id.
+- Edit incidents.yml and change what you need to there.
+-- make sure to change issueId to the above filter id.
+- Run: ruby incidents.rb
+- browse to http://localhost:4567 to view.
+

@@ -1,0 +1,29 @@
+!!!
+%html
+  %head
+    %title Incidents Report
+    %link{rel: 'stylesheet', type: 'text/css', href: 'style.css'}
+    %meta(http-equiv = 'refresh' content = '600')
+  %body
+    .rounded.wrapper
+      %a(href = "#{@config["sites"]["page"]}" target="_blank")= @daysSinceLast
+      %br
+      %span.incident= @config["caption"]
+      .stats
+        First reported:
+        %span.summary= @issues.first.create_time.strftime("%Y-%m-%d")
+        %br
+        Total reported:
+        %span.summary= @days.count
+        %br
+        Longest bugfree streak: 
+        %span.summary= @recordStreak
+        %br
+        Days between last 2 reported: 
+        %span.summary= @daysBetweenLastTwo
+        %br
+        Last reported:
+        %span.summary= @lastIncident.summary
+        %br
+      %br
+

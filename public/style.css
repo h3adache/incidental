@@ -1,0 +1,39 @@
+.rounded {
+    border-radius : 15px;
+}
+.wrapper {
+    padding : 10px 30px;
+    text-align : center;
+    margin : 25px;
+    height : 50%;
+    background : #FFCC33;
+    color : #990000;
+}
+.stats {
+    text-align : left;
+    left : 150px;
+    top : 150px;
+    font-size : 1.2em;
+}
+.incident {
+    color : #70A8D2;
+    font-weight : bold;
+    font-size : 6em;
+}
+.summary {
+    color : #990011;
+    font-weight : bold;
+    float: right;
+}
+a {
+    color : red;
+    font-weight : bold;
+    font-size : 16em;
+    text-decoration : none;
+}
+.footer {
+    float : right;
+    color : #70A8D2;
+    font-weight : bold;
+    font-size : 2em;
+}

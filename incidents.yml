@@ -1,0 +1,7 @@
+sites:
+    jira: http://jira #url to jira instance
+    page: http://confluence #optional page to link to issues etc
+issueId: 1337 # id of the filter that you created in jira
+caption: days since last incident.  # this is the text under the number of days since incident
+user: joeuser #userid to log into jira with
+passwd: joepassword #password
