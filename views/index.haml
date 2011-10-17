@@ -6,7 +6,7 @@
     %meta(http-equiv = 'refresh' content = '600')
   %body
     .rounded.wrapper
-      %a(href = "#{@config["sites"]["page"]}" target="_blank")= @daysSinceLast
+      %a.link(href = "#{@config["sites"]["page"]}" target="_blank")= @daysSinceLast
       %br
       %span.incident= @config["caption"]
       .stats
@@ -23,7 +23,8 @@
         %span.summary= @daysBetweenLastTwo
         %br
         Last reported:
-        %span.summary= @lastIncident.summary
+        %span.summary
+          %a(href = @lastIncidentUrl)= @lastIncident.summary
         %br
       %br
 
