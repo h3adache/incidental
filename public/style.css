@@ -20,16 +20,18 @@
     font-weight : bold;
     font-size : 6em;
 }
-.summary {
+.summary, .summary > a {
     color : #990011;
     font-weight : bold;
     float: right;
 }
 a {
+    text-decoration : none;
+}
+a.link {
     color : red;
     font-weight : bold;
     font-size : 16em;
-    text-decoration : none;
 }
 .footer {
     float : right;
